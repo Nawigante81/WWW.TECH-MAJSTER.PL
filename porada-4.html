@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 4 — Tech-Majster PRO</title>
+  <meta name="description" content="Poradnik: jak poprawnie robić kopie zapasowe w domu — strategie 3-2-1 i proste narzędzia.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Jak robić kopie zapasowe w domu — prosty plan 3‑2‑1</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+  <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/1click-5gIiuxKEBE0-unsplash-1200.webp" alt="Kopia zapasowa na dysku" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>Reguła 3‑2‑1 to najprostsza i najbardziej skuteczna zasada: trzy kopie danych, na dwóch różnych nośnikach, jedna poza domem. W praktyce oznacza to, że poza dyskiem lokalnym warto mieć przynajmniej jedną kopię na nośniku fizycznym (dysk zewnętrzny, NAS) oraz jedną kopię w chmurze. Dobre kopie zapasowe minimalizują ryzyko utraty danych z powodu błędu ludzkiego, awarii sprzętu lub zdarzeń losowych.</p>
+
+      <h2 id="plan">Praktyczny plan wdrożenia <a class="anchor" href="#plan">#</a></h2>
+      <p class="article-section">1) Zidentyfikuj dane krytyczne — zdjęcia, dokumenty, księgi firmowe oraz pliki projektowe. 2) Ustal harmonogram: codzienne backupy dla plików roboczych, cotygodniowe pełne kopie i comiesięczne archiwa. 3) Automatyzuj — ręczne kopie często zawodzą, więc użyj narzędzi które wykonają zadania automatycznie.</p>
+
+      <h2 id="rozwiazania">Przykładowe rozwiązania <a class="anchor" href="#rozwiazania">#</a></h2>
+      <ol class="article-section">
+        <li>Dysk zewnętrzny + software (np. Acronis, Windows File History) do codziennego zapisu zmian.</li>
+        <li>NAS w domu z snapshotami (ZFS/Btrfs) + wersjonowanie.</li>
+        <li>Kopia offsite: Duplicati, Backblaze, lub szyfrowany backup do Dropbox/OneDrive/Google Drive.</li>
+      </ol>
+
+      <h2 id="baza-narzedzi">Baza narzędzi <a class="anchor" href="#baza-narzedzi">#</a></h2>
+      <ul class="article-section">
+        <li><b>Windows:</b> File History + Veeam Agent (bezpłatny) dla obrazów systemu.</li>
+        <li><b>macOS:</b> Time Machine + kopia offsite (Arq / restic).</li>
+        <li><b>Linux:</b> restic / borgbackup + systemd timer dla harmonogramu.</li>
+      </ul>
+
+      <h2 id="szyfrowanie">Szyfrowanie i bezpieczeństwo <a class="anchor" href="#szyfrowanie">#</a></h2>
+      <p class="article-section">Przed wysłaniem do chmury zaszyfruj dane lokalnie (np. VeraCrypt, gpg, restic –repo). Upewnij się, że klucz szyfrujący jest bezpieczny — jeśli go stracisz, kopia będzie bezużyteczna. Rozważ przechowywanie kluczy w menedżerze haseł + offline wydruk recovery.</p>
+
+      <h2 id="testy">Testy przywracania <a class="anchor" href="#testy">#</a></h2>
+      <p class="article-section">Najważniejsza część systemu backupów to testy przywracania — co najmniej raz na kwartał przywróć kilka plików, żeby mieć pewność, że kopie są kompletne i integralne. Raz w roku wykonaj symulację awarii: odtwórz pełen system na zapasowym nośniku.</p>
+
+      <h2 id="podsumowanie">Podsumowanie <a class="anchor" href="#podsumowanie">#</a></h2>
+      <p class="article-section">Dobry system backupów to nie jeden dysk, lecz strategia: automatyzacja, szyfrowanie i regularne testy odtwarzania. Zainwestuj czas na ustawienie i sprawdź, że proces działa zanim będziesz go potrzebował. Prewencja = oszczędność godzin stresu i kosztów odzysku.</p>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

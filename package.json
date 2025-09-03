@@ -1,0 +1,21 @@
+{
+  "name": "tech-majster-pro-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for Tech-Majster PRO",
+  "license": "MIT",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./assets/css/tw-source.css -o ./assets/css/tailwind.css --watch",
+    "build:css": "tailwindcss -i ./assets/css/tw-source.css -o ./assets/css/tailwind.css --minify",
+    "build": "npm run build:css && node build-script.js",
+    "dev": "npm run dev:css",
+    "clean": "if exist dist rmdir /s /q dist",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "html-minifier-terser": "^7.2.0"
+  }
+}

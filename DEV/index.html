@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tech-Majster PRO — Serwis IT | Zgorzelec</title>
+	<meta name="description" content="Serwis IT: naprawy, odzysk danych, cyberbezpieczeństwo, sieci, modernizacje. Zgorzelec i okolice.">
+	<meta name="build" content="2025-08-23T12:00:00Z">
+	<meta name="robots" content="index, follow">
+	<!-- AOS (animacje scroll) -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<meta name="theme-color" content="#00FF88" />
+	<link rel="manifest" href="/manifest.webmanifest">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+	<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+	<link rel="shortcut icon" href="/assets/img/icon-192.png">
+	<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+	<!-- Tailwind: DEV CDN (docelowo lokalny build) -->
+	<script defer src="https://cdn.tailwindcss.com"></script>
+	<!-- Lokalny plik (opcjonalny build przyszłości) -->
+	<link rel="stylesheet" href="/assets/css/tailwind.css" media="print" onload="this.media='all'">
+	<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+	<link rel="preconnect" href="https://js.stripe.com" crossorigin>
+	<link rel="preload" as="image" href="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=60&w=1200" imagesrcset="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=60&w=800 800w, https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=60&w=1200 1200w" imagesizes="(min-width:768px) 600px, 100vw">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+
+	<script src="/assets/js/web-vitals-fallback.js" defer></script>
+	<link rel="stylesheet" href="/assets/css/styles.css?v=20250823" />
+	<!-- OG production -->
+	<meta property="og:title" content="Tech-Majster PRO — Serwis IT (Zgorzelec)">
+	<meta property="og:description" content="Naprawy, odzysk danych, bezpieczeństwo, modernizacje. Profesjonalnie i szybko.">
+	<meta property="og:image" content="/assets/img/og-cover.jpg">
+	<meta property="og:type" content="website">
+	<!-- Usunięto przestarzały JSON-LD 3DModel (AR) -->
+	<script type="application/ld+json">
+	{
+		"@context":"https://schema.org",
+		"@type":"LocalBusiness",
+		"name":"Tech-Majster PRO",
+		"url":"https://getacid.uk",
+	"telephone":"+48 724 316 523",
+	"address":{"@type":"PostalAddress","addressLocality":"Zgorzelec","addressCountry":"PL"},
+		"sameAs":["https://x.com/techmajster","https://facebook.com/techmajster","https://instagram.com/techmajster"],
+		"areaServed":"PL",
+	"description":"Serwis IT z zaawansowanymi efektami, odzyskiwaniem danych, cyberbezpieczeństwem i sieciami. Zgorzelec i okolice."
+	}
+	</script>
+	<!-- FAQ Schema JSON-LD (rozszerzone) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+	{"@type":"Question","name":"Ile trwa naprawa?","acceptedAnswer":{"@type":"Answer","text":"Zazwyczaj 1–3 dni. Pilne – nawet w godziny. Porada: Opisz problem szczegółowo."}},
+	{"@type":"Question","name":"Czy dojeżdżacie do klienta?","acceptedAnswer":{"@type":"Answer","text":"Tak, Zgorzelec + 50 km. Zdalnie przez TeamViewer. Porada: Przygotuj sprzęt."}},
+	{"@type":"Question","name":"Czy odzyskacie 100% danych?","acceptedAnswer":{"@type":"Answer","text":"Staramy się o 95%+. Nikt nie gwarantuje 100%. Porada: Backup regularnie!"}},
+	{"@type":"Question","name":"Jaka gwarancja na usługi?","acceptedAnswer":{"@type":"Answer","text":"12 miesięcy na części i pracę. Porada: Używaj oryginalnych komponentów."}},
+	{"@type":"Question","name":"Jak chronić przed malware?","acceptedAnswer":{"@type":"Answer","text":"Antywirus + update'y + ostrożność. Porada: Unikaj pirackiego softu."}},
+	{"@type":"Question","name":"Co z sieciami w dużym domu?","acceptedAnswer":{"@type":"Answer","text":"System mesh. Porada: Testuj prędkość przed i po."}},
+	{"@type":"Question","name":"Ile kosztuje modernizacja?","acceptedAnswer":{"@type":"Answer","text":"Od 150 zł. Porada: Wybierz kompatybilne części."}},
+	{"@type":"Question","name":"Czy tracę dane przy reinstalacji?","acceptedAnswer":{"@type":"Answer","text":"Nie jeśli wykonamy kopię lub masz backup. Porada: Zawsze potwierdź zakres działań."}},
+	{"@type":"Question","name":"Czy naprawiacie MacBooki?","acceptedAnswer":{"@type":"Answer","text":"Tak – diagnostyka, klawiatury, płyty, układy zasilania. Porada: Nie ignoruj objawów zalania."}},
+	{"@type":"Question","name":"Co jeśli sprzęt się przegrzewa?","acceptedAnswer":{"@type":"Answer","text":"Czyszczenie + pasta często pomaga. Porada: Wymień pastę co 12–18 mies."}},
+	{"@type":"Question","name":"Czy mogę śledzić status naprawy?","acceptedAnswer":{"@type":"Answer","text":"Tak – mail/SMS z etapami. Porada: Podaj aktualny numer telefonu."}},
+	{"@type":"Question","name":"Jak dobrać zasilacz do PC?","acceptedAnswer":{"@type":"Answer","text":"Moc z zapasem 20–30%, certyfikat 80+ Bronze+. Porada: Sprawdź realne TDP GPU."}},
+	{"@type":"Question","name":"Czy odzyskujecie dane z RAID?","acceptedAnswer":{"@type":"Answer","text":"Tak – logiczne i częściowo fizyczne. Porada: Nie przebudowuj bez obrazu dysków."}},
+	{"@type":"Question","name":"Czy instalujecie system od zera?","acceptedAnswer":{"@type":"Answer","text":"Tak, z aktualizacjami i optymalizacją. Porada: Zapisz licencje przed oddaniem."}},
+	{"@type":"Question","name":"Jak zabezpieczyć Wi-Fi?","acceptedAnswer":{"@type":"Answer","text":"WPA3, silne hasło, aktualny firmware. Porada: Wyłącz WPS."}},
+	{"@type":"Question","name":"Czy warto wymienić HDD na SSD?","acceptedAnswer":{"@type":"Answer","text":"Tak – duży wzrost responsywności. Porada: Wybierz NVMe jeśli możliwe."}},
+	{"@type":"Question","name":"Jak często robić backup?","acceptedAnswer":{"@type":"Answer","text":"Min. raz w tygodniu lub ciągły. Porada: Testuj odtworzenie kopii."}},
+	{"@type":"Question","name":"Czy naprawa anuluje gwarancję producenta?","acceptedAnswer":{"@type":"Answer","text":"Zależy od zakresu. Porada: Konsultuj przed naruszeniem plomb."}},
+	{"@type":"Question","name":"Czy odzyskanie danych jest zawsze możliwe?","acceptedAnswer":{"@type":"Answer","text":"Nie – uszkodzenia mechaniczne mogą uniemożliwić. Porada: Wyłącz nośnik od razu."}},
+	{"@type":"Question","name":"Czy pomagacie dobrać części do modernizacji?","acceptedAnswer":{"@type":"Answer","text":"Tak – kompletna lista zgodnych komponentów. Porada: Ustal budżet i priorytet."}},
+	{"@type":"Question","name":"Jak chronić się przed phishingiem?","acceptedAnswer":{"@type":"Answer","text":"Sprawdzaj domeny, używaj 2FA, nie klikaj podejrzanych linków. Porada: Menedżer haseł ujawnia fałszywe domeny."}}
+		]
+	}
+	</script>
+	<!-- BreadcrumbList schema -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type":"ListItem","position":1,"name":"Home","item":"https://getacid.uk/"},
+			{"@type":"ListItem","position":2,"name":"Usługi","item":"https://getacid.uk/#uslugi"},
+			{"@type":"ListItem","position":3,"name":"Realizacje","item":"https://getacid.uk/#realizacje"},
+			{"@type":"ListItem","position":4,"name":"Porady","item":"https://getacid.uk/#porady"},
+			{"@type":"ListItem","position":5,"name":"Cennik","item":"https://getacid.uk/#cennik"},
+			{"@type":"ListItem","position":6,"name":"FAQ","item":"https://getacid.uk/#faq"},
+			{"@type":"ListItem","position":7,"name":"Kontakt","item":"https://getacid.uk/#kontakt"}
+		]
+	}
+	</script>
+	<link rel="canonical" href="https://getacid.uk/">
+	<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+	<!-- Usunięto duplikat meta robots -->
+	<!-- Google Translate -->
+	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+	<!-- Usunięto zewnętrzny web-vitals (ESM) – DEV także polega na lokalnym fallbacku -->
+	<!-- Uwaga: three.js + GLTFLoader ładowane dynamicznie w app.js (ensureThree) -->
+</head>
+<body class="bg-ink text-slate-200 antialiased selection:bg-accent/50" aria-label="Główna strona Tech-Majster PRO">
+	<!-- Google Translate widget -->
+	<div id="google_translate_element" class="fixed top-4 right-4 z-50"></div>
+	<script>
+		function googleTranslateElementInit(){
+			new google.translate.TranslateElement({pageLanguage:'pl',includedLanguages:'en,de'},'google_translate_element');
+		}
+	</script>
+	<!-- BG z ulepszonymi efektami -->
+	<canvas id="matrix-bg" class="fixed inset-0 -z-5"></canvas>
+	<div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,rgba(0,255,136,.15),transparent_30%),radial-gradient(circle_at_90%_20%,rgba(0,255,136,.10),transparent_25%),radial-gradient(circle_at_50%_90%,rgba(0,255,136,.12),transparent_30%)] animate-pulse"></div>
+	<!-- NAV z efektami hover -->
+	<a href="#app" id="skipLink" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-black px-4 py-2 rounded z-[9999]">Pomiń do treści</a>
+	<header class="sticky top-3 z-50 mx-auto w-[95%] md:max-w-6xl">
+		<div id="navbar" class="backdrop-blur bg-black/50 border border-accent/30 rounded-2xl px-4 sm:px-6 shadow-glow transition-all duration-300">
+			<div class="h-16 flex items-center justify-between">
+				<a href="#home" class="flex items-center gap-3" aria-label="Tech-Majster – strona główna">
+					<img src="/assets/img/logo.svg" alt="Logo Tech-Majster" width="44" height="44" class="w-11 h-11" loading="eager" decoding="async" fetchpriority="high">
+					<span class="font-display font-extrabold text-xl md:text-2xl leading-none tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,0,0,0.6)]">
+						Tech-<span class="text-accent">Majster</span>
+					</span>
+				</a>
+				<nav class="hidden md:flex gap-6 text-sm font-display">
+					<a data-route="uslugi" href="#uslugi" class="nav-link hover:text-accent hover:scale-105 transition-transform">Usługi</a>
+					<a data-route="realizacje" href="#realizacje" class="nav-link hover:text-accent hover:scale-105 transition-transform">Realizacje</a>
+					<a data-route="porady" href="#porady" class="nav-link hover:text-accent hover:scale-105 transition-transform">Porady</a>
+					<a data-route="cennik" href="#cennik" class="nav-link hover:text-accent hover:scale-105 transition-transform">Cennik</a>
+					<a data-route="o-nas" href="#o-nas" class="nav-link hover:text-accent hover:scale-105 transition-transform">O nas</a>
+					<a data-route="faq" href="#faq" class="nav-link hover:text-accent hover:scale-105 transition-transform">FAQ</a>
+										<a data-route="kontakt" href="#kontakt" class="nav-link hover:text-accent hover:scale-105 transition-transform">Kontakt</a>
+										<span class="hidden md:flex items-center gap-2 ml-2">
+											<!-- visitor counter removed (kept in kontakt.html) -->
+										</span>
+				</nav>
+				<div class="flex items-center gap-3">
+					<!-- przycisk motywu -->
+					<button id="themeToggle" class="p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors" aria-label="Przełącz motyw">
+						<i data-lucide="moon" class="w-5 h-5"></i>
+					</button>
+					<a href="#kontakt" data-route="kontakt" class="hidden sm:inline-flex items-center gap-2 font-display font-bold px-5 py-2.5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-accent/70 focus:ring-offset-2 focus:ring-offset-ink
+						 bg-gradient-to-r from-accent to-emerald-300 text-ink shadow-[0_0_0_1px_rgba(0,255,136,.4),0_8px_25px_-5px_rgba(0,255,136,.35)] hover:shadow-[0_0_0_1px_rgba(0,255,136,.6),0_10px_30px_-5px_rgba(0,255,136,.5)]
+						 hover:translate-y-[-3px] active:translate-y-[-1px] transition-all text-sm tracking-wide">
+						<i data-lucide="send" class="w-4 h-4"></i><span>Kontakt</span>
+					</a>
+					<button id="openMenu" class="md:hidden p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors">
+						<i data-lucide="menu" class="w-5 h-5"></i>
+					</button>
+				</div>
+			</div>
+			<div id="mobileMenu" class="hidden md:hidden py-3 border-t border-accent/20 transition-all duration-300">
+				<nav class="grid gap-2 text-sm font-display">
+					<a data-route="uslugi" href="#uslugi" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Usługi</a>
+					<a data-route="realizacje" href="#realizacje" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Realizacje</a>
+					<a data-route="porady" href="#porady" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Porady</a>
+					<a data-route="cennik" href="#cennik" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Cennik</a>
+					<a data-route="o-nas" href="#o-nas" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">O nas</a>
+					<a data-route="faq" href="#faq" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">FAQ</a>
+					<a data-route="kontakt" href="#kontakt" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Kontakt</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- MAIN -->
+	<main id="app" class="mx-auto w-[95%] md:max-w-6xl pt-24"></main>
+
+
+
+	<!-- FOOTER z więcej treściami -->
+	<footer class="mt-24 border-t border-accent/20 py-10 text-sm" role="contentinfo">
+		<div class="mx-auto w-[95%] md:max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 items-start md:items-center justify-between">
+			<div>
+	<div class="font-display font-bold text-lg">Tech-<span class="text-accent">Majster</span></div>
+	<div class="text-slate-400">© 2025. System online. Połączenie szyfrowane. Najlepszy serwis w Zgorzelcu!</div>
+				<p class="text-xs text-slate-500 mt-2">Oferujemy porady, naprawy i cyberbezpieczeństwo na najwyższym poziomie.</p>
+			</div>
+			<div class="flex gap-4 text-slate-400">
+				<a href="https://x.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="X"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+				<a href="https://facebook.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+				<a href="https://instagram.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+			</div>
+		</div>
+		<section class="mx-auto w-[95%] md:max-w-6xl mt-8">
+			<h3 class="font-display font-bold mb-3">Aktualności i Szybkie Porady</h3>
+			<div id="news" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+		</section>
+		<!-- Newsletter (Mailchimp) -->
+		<section class="mx-auto w-[95%] md:max-w-6xl mt-8" data-aos="fade-up">
+			<h3 class="font-display font-bold mb-3">Zapisz się na newsletter</h3>
+			<div class="glass rounded-2xl p-5">
+				<form action="https://youraccount.us21.list-manage.com/subscribe/post?u=your-account-id&amp;id=your-list-id&amp;f_id=00e5e1e5f0" method="post" target="_blank" class="grid gap-4 md:grid-cols-[1fr_auto] items-end">
+					<label class="block">
+						<span class="text-xs uppercase tracking-wide text-slate-400">Adres email</span>
+						<input type="email" name="EMAIL" required class="mt-1 w-full bg-transparent border border-accent/40 focus:border-accent rounded-xl px-4 py-3 text-sm" placeholder="twoj@email.pl">
+					</label>
+					<button type="submit" class="btn-submit-primary font-display font-bold" aria-label="Zapisz się na newsletter">
+						Zapisz mnie
+					</button>
+					<div hidden><input type="hidden" name="tags" value="1234567"></div>
+					<div style="position:absolute;left:-5000px" aria-hidden="true">
+						<input type="text" name="b_your-account-id_your-list-id" tabindex="-1" value="">
+					</div>
+				</form>
+				<p class="mt-2 text-xs text-slate-500">Subskrybując akceptujesz politykę prywatności. Możesz wypisać się w każdej chwili.</p>
+			</div>
+		</section>
+	</footer>
+	<noscript>
+		<div class="fixed bottom-0 inset-x-0 bg-red-600 text-white text-center py-2 text-sm font-display">
+			Ta strona wymaga JavaScript do pełnej funkcjonalności.
+		</div>
+	</noscript>
+	<!-- AOS JS (init w app.js -> postInitialEnhancements) -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- Usunięto lokalne AOS.init aby uniknąć podwójnej inicjalizacji -->
+	<script src="/assets/js/app.js?v=20250823" type="module" loading="lazy"></script>
+	<!-- visitor counter assets removed from DEV index -->
+</body>
+</html>

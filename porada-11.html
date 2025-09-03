@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 11 — Tech-Majster PRO</title>
+  <meta name="description" content="Jak przyspieszyć komputer: sprzątanie systemu, zarządzanie autostartem i aktualizacje.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Jak przyspieszyć komputer — sprzątanie systemu i autostart</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+    <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/1click-2sQWytjcL1o-unsplash-1200.webp" alt="Optymalizacja" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>Usuń zbędne autostarty, zaktualizuj sterowniki (GPU, chipset), monitoruj temperatury i użycie zasobów. Dla dysków SSD włącz TRIM, regularnie czyść tymczasowe pliki systemowe i przeglądarek.</p>
+
+      <h2 id="szybkie-kroki">Szybkie kroki <a class="anchor" href="#szybkie-kroki">#</a></h2>
+      <ul class="article-section">
+        <li>Win+R: shell:startup – usuń zbędne skróty.</li>
+        <li>Harmonogram zadań – dezaktywuj niepotrzebne zaplanowane skanowania.</li>
+        <li>Ustaw plan zasilania: Wysoka wydajność / zbalansowany na laptopach.</li>
+      </ul>
+
+      <h2 id="porzadkowanie">Porządkowanie zasobów <a class="anchor" href="#porzadkowanie">#</a></h2>
+      <ul class="article-section">
+        <li>Disk Cleanup / Storage Sense lub narzędzia typu BleachBit (ostrożnie).</li>
+        <li>Odinstaluj triale / bloatware OEM.</li>
+        <li>Włącz TRIM (fsutil behavior query DisableDeleteNotify powinno = 0).</li>
+      </ul>
+
+      <h2 id="sterowniki">Sterowniki i firmware <a class="anchor" href="#sterowniki">#</a></h2>
+      <ul class="article-section">
+        <li>GPU: sterownik Game Ready / Studio zgodnie z profilem użytkowania.</li>
+        <li>Aktualizacje BIOS/UEFI tylko przy uzasadnionej potrzebie (stabilność / CPU microcode).</li>
+        <li>Kontroler NVMe – użyj narzędzi producenta do aktualizacji firmware.</li>
+      </ul>
+
+      <h2 id="monitoring-zasobow">Monitoring zasobów <a class="anchor" href="#monitoring-zasobow">#</a></h2>
+      <ul class="article-section">
+        <li>Process Explorer / Resource Monitor – identyfikacja wąskich gardeł.</li>
+        <li>HWInfo / OpenHardwareMonitor – temperatury, throttling.</li>
+        <li>CrystalDiskInfo – kondycja dysków (SMART).</li>
+      </ul>
+
+      <h2 id="prewencja">Prewencja degradacji <a class="anchor" href="#prewencja">#</a></h2>
+      <ul class="article-section">
+        <li>Regularne aktualizacje zabezpieczeń OS.</li>
+        <li>Nie instaluj pakietów „przyspieszaczy” ingerujących w rejestr.</li>
+        <li>Backup przed modyfikacją sterowników / firmware.</li>
+      </ul>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

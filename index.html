@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech-Majster PRO — Serwis IT | Zgorzelec</title>
+  <meta name="description" content="Tech-Majster PRO - Serwis IT: naprawy, odzysk danych, cyberbezpieczeństwo, sieci, modernizacje. Zgorzelec i okolice.">
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tech-majster.pl/">
+  <meta property="og:title" content="Tech-Majster PRO — Serwis IT | Zgorzelec">
+  <meta property="og:description" content="Serwis IT: naprawy, odzysk danych, cyberbezpieczeństwo, sieci, modernizacje. Zgorzelec i okolice.">
+  <meta property="og:image" content="https://www.tech-majster.pl/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Tech-Majster PRO">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@techmajster">
+  <meta name="twitter:creator" content="@techmajster">
+  <meta name="twitter:url" content="https://www.tech-majster.pl/">
+  <meta name="twitter:title" content="Tech-Majster PRO — Serwis IT | Zgorzelec">
+  <meta name="twitter:description" content="Serwis IT: naprawy, odzysk danych, cyberbezpieczeństwo, sieci, modernizacje. Zgorzelec i okolice.">
+  <meta name="twitter:image" content="https://www.tech-majster.pl/assets/img/og-cover.jpg">
+  
+  <!-- LinkedIn -->
+  <meta property="article:author" content="Tech-Majster PRO">
+  
+  <!-- WhatsApp -->
+  <meta property="og:image:alt" content="Tech-Majster PRO - Serwis IT w Zgorzelcu">
+  
+  <!-- Przekierowanie do polskiej wersji -->
+  <link rel="canonical" href="https://www.tech-majster.pl/" />
+  
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  
+  <!-- Minimalne style dla strony wyboru języka -->
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,255,136,0.3);
+      border-radius: 24px;
+      padding: 3rem;
+      box-shadow: 0 0 30px rgba(0,255,136,0.2);
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .accent { color: #00FF88; }
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 2rem;
+    }
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .lang-button {
+      display: block;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #00FF88, #00CC6F);
+      color: #000;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .lang-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,255,136,0.4);
+      background: linear-gradient(135deg, #00CC6F, #00AA5A);
+    }
+    .auto-redirect {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(0,255,136,0.1);
+      border-radius: 8px;
+      border: 1px solid rgba(0,255,136,0.3);
+    }
+    .countdown {
+      font-weight: 600;
+      color: #00FF88;
+    }
+    @media (max-width: 640px) {
+      .container {
+        margin: 1rem;
+        padding: 2rem;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  
+  <!-- Automatyczne przekierowanie do polskiej wersji -->
+  <script>
+    // Sprawdź czy użytkownik już był na stronie (localStorage)
+    const hasVisited = localStorage.getItem('tech-majster-visited');
+    
+    if (!hasVisited) {
+      // Pierwsza wizyta - przekieruj do polskiej wersji
+      localStorage.setItem('tech-majster-visited', 'true');
+      
+      // Krótkie opóźnienie dla lepszego UX
+      setTimeout(() => {
+        window.location.href = '/pl/';
+      }, 1500);
+    } else {
+      // Użytkownik już był - przekieruj natychmiast
+      window.location.href = '/pl/';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      Tech-<span class="accent">Majster</span>
+    </div>
+  <!-- compact header counter for root index (small preview) -->
+    <p class="subtitle">
+      Serwis IT | Zgorzelec
+    </p>
+    
+    <!-- Komunikat o przekierowaniu -->
+    <div class="auto-redirect">
+      <p>🚀 Przekierowanie do strony głównej...</p>
+      <p><small>Jeśli nie zostaniesz przekierowany automatycznie, <a href="/pl/" style="color: #00FF88;">kliknij tutaj</a></small></p>
+    </div>
+    
+    <noscript>
+      <div style="margin-top: 2rem; padding: 1rem; background: rgba(255,196,0,0.1); border-radius: 8px; border: 1px solid rgba(255,196,0,0.3);">
+        <p style="color: #fbbf24; margin: 0;">JavaScript jest wyłączony. Proszę wybrać język ręcznie powyżej.</p>
+      </div>
+    </noscript>
+  </div>
+  <!-- visitor counter removed from this page (kept only in kontakt.html under Kontakt button) -->
+</body>
+</html>

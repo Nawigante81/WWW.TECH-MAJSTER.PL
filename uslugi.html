@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usługi — Tech-Majster PRO | Zgorzelec</title>
+  <meta name="description" content="Usługi serwisu IT: naprawy, odzysk danych, cyberbezpieczeństwo, sieci, modernizacje. Zgorzelec i okolice.">
+  <meta name="build" content="2025-08-23T12:00:00Z">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.tech-majster.pl/uslugi.html">
+
+  <!-- AOS (animacje scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-512.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <!-- Tailwind: PROD – zminimalizować; tymczasowo CDN (TODO: build local) -->
+  <script defer src="https://cdn.tailwindcss.com"></script>
+  <!-- Lokalny plik (opcjonalny build przyszłości) -->
+  <link rel="stylesheet" href="assets/css/tailwind.css" media="print" onload="this.media='all'">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://js.stripe.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Lokalny fallback web-vitals -->
+  <script src="assets/js/web-vitals-fallback.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=20250823" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tech-majster.pl/uslugi.html">
+  <meta property="og:title" content="Usługi — Tech-Majster PRO (Zgorzelec)">
+  <meta property="og:description" content="Pełna oferta serwisu IT: naprawy, odzysk danych, bezpieczeństwo, modernizacje i sieci.">
+  <meta property="og:image" content="https://www.tech-majster.pl/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tech-Majster PRO - Usługi serwisu IT">
+  <meta property="og:site_name" content="Tech-Majster PRO">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@techmajster">
+  <meta name="twitter:creator" content="@techmajster">
+  <meta name="twitter:url" content="https://www.tech-majster.pl/uslugi.html">
+  <meta name="twitter:title" content="Usługi — Tech-Majster PRO (Zgorzelec)">
+  <meta name="twitter:description" content="Pełna oferta serwisu IT: naprawy, odzysk danych, bezpieczeństwo, modernizacje i sieci.">
+  <meta name="twitter:image" content="https://www.tech-majster.pl/assets/img/og-cover.jpg">
+  
+  <!-- LinkedIn -->
+  <meta property="article:author" content="Tech-Majster PRO">
+  
+  <!-- WhatsApp/Telegram optimized -->
+  <meta property="og:image:secure_url" content="https://www.tech-majster.pl/assets/img/og-cover.jpg">
+
+  <!-- LocalBusiness JSON-LD (powtarzamy dla podstrony) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://getacid.uk/#business",
+    "name": "Tech-Majster PRO",
+    "url": "https://getacid.uk",
+    "logo": "https://getacid.uk/assets/img/logo.svg",
+    "image": "https://getacid.uk/assets/img/og-cover.jpg",
+    "email": "acidsecurity@proton.me",
+    "telephone": "+48 724 316 523",
+    "priceRange": "PLN 0-600+",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ul. Przykładowa 123",
+      "addressLocality": "Zgorzelec",
+      "addressRegion": "Dolnośląskie",
+      "postalCode": "59-900",
+      "addressCountry": "PL"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.149, "longitude": 15.008 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" }
+    ],
+    "sameAs": ["https://x.com/techmajster","https://facebook.com/techmajster","https://instagram.com/techmajster"],
+    "areaServed": [
+      { "@type": "City", "name": "Zgorzelec" },
+      { "@type": "AdministrativeArea", "name": "Dolnośląskie" },
+      { "@type": "Country", "name": "Polska" }
+    ]
+  }
+  </script>
+
+  <link rel="canonical" href="https://getacid.uk/uslugi.html">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+</head>
+<body class="bg-ink text-slate-200 antialiased selection:bg-accent/50">
+  <!-- BG -->
+  <canvas id="matrix-bg" class="fixed inset-0 -z-5"></canvas>
+  <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,rgba(0,255,136,.15),transparent_30%),radial-gradient(circle_at_90%_20%,rgba(0,255,136,.10),transparent_25%),radial-gradient(circle_at_50%_90%,rgba(0,255,136,.12),transparent_30%)] animate-pulse"></div>
+
+  <!-- Skip -->
+  <a href="#app" id="skipLink" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-black px-4 py-2 rounded z-[9999]">Pomiń do treści</a>
+
+  <!-- Header/Nav (jak w index.html) -->
+  <header class="sticky top-3 z-50 mx-auto w-[95%] md:max-w-6xl">
+    <div id="navbar" class="backdrop-blur bg-black/50 border-accent-gradient rounded-2xl px-4 sm:px-6 shadow-glow transition-all duration-300">
+      <div class="h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3" aria-label="Tech-Majster – strona główna">
+          <img src="/assets/img/logo.svg" alt="Logo Tech-Majster" width="44" height="44" class="w-11 h-11" loading="eager" decoding="async" fetchpriority="high">
+          <span class="font-display font-extrabold text-xl md:text-2xl leading-none tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,0,0,0.6)]">
+            Tech-<span class="text-accent">Majster</span>
+          </span>
+        </a>
+  <!-- compact counter next to logo (removed) -->
+  <nav class="hidden md:flex gap-6 text-sm font-display">
+          <a data-route="uslugi" href="#uslugi" class="nav-link hover:text-accent hover:scale-105 transition-transform" aria-current="page">Usługi</a>
+          <a data-route="realizacje" href="#realizacje" class="nav-link hover:text-accent hover:scale-105 transition-transform">Realizacje</a>
+          <a data-route="porady" href="#porady" class="nav-link hover:text-accent hover:scale-105 transition-transform">Porady</a>
+          <a data-route="cennik" href="#cennik" class="nav-link hover:text-accent hover:scale-105 transition-transform">Cennik</a>
+          <a data-route="onas" href="#onas" class="nav-link hover:text-accent hover:scale-105 transition-transform">O nas</a>
+          <a data-route="faq" href="#faq" class="nav-link hover:text-accent hover:scale-105 transition-transform">FAQ</a>
+          <a data-route="kontakt" href="#kontakt" class="nav-link hover:text-accent hover:scale-105 transition-transform">Kontakt</a>
+          <span class="hidden md:flex items-center gap-2 ml-2">
+            <!-- visitor counter removed (kept in kontakt.html) -->
+          </span>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="themeToggle" class="p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors" aria-label="Przełącz motyw">
+            <i data-lucide="moon" class="w-5 h-5"></i>
+          </button>
+          <a href="#kontakt" data-route="kontakt" class="btn-accent hidden sm:inline-flex">
+            <i data-lucide="send" class="w-4 h-4"></i><span>Kontakt</span>
+          </a>
+          <button id="openMenu" class="md:hidden p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden py-3 border-t border-accent/20 transition-all duration-300">
+        <nav class="grid gap-2 text-sm font-display">
+          <a data-route="uslugi" href="#uslugi" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform" aria-current="page">Usługi</a>
+          <a data-route="realizacje" href="#realizacje" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Realizacje</a>
+          <a data-route="porady" href="#porady" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Porady</a>
+          <a data-route="cennik" href="#cennik" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Cennik</a>
+          <a data-route="onas" href="#onas" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">O nas</a>
+          <a data-route="faq" href="#faq" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">FAQ</a>
+          <a data-route="kontakt" href="#kontakt" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN: prerender snapshot Usługi -->
+  <main id="app" class="mx-auto w-[95%] md:max-w-6xl pt-24">
+    <section class="space-y-10" aria-labelledby="servicesHeading">
+      <header class="fade-in" data-aos="fade-up">
+          <h1 id="servicesHeading" class="text-4xl md:text-5xl font-display font-bold">Usługi</h1>
+        </header>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 services-grid">
+        <!-- 1 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="0">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="cpu" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Diagnoza i naprawa</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>Laptopy</li><li>Komputery PC</li><li>MacBook / iMac</li><li>Konsole (PS/Xbox/Nintendo)</li><li>Smartfony i tablety</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-400.webp 400w, assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-800.webp 800w, assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-1200.webp 1200w, assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-800.webp" alt="Diagnoza i naprawa – otwarty komputer PC podczas serwisu" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/clint-patterson-yGPxCYPS8H4-unsplash-800.webp" alt="Diagnoza i naprawa – otwarty komputer PC podczas serwisu" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 2 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="70">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="database" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Odzyskiwanie danych</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>HDD 2.5"/3.5"</li><li>SSD SATA/NVMe</li><li>RAID 0/1/5/10</li><li>NAS/SAN</li><li>Karty SD/USB</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-400.webp 400w, assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-800.webp 800w, assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-1200.webp 1200w, assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-800.webp" alt="Odzyskiwanie danych – moduły pamięci i nośniki" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/samsung-memory-A5EG0zVPKRU-unsplash-800.webp" alt="Odzyskiwanie danych – moduły pamięci i nośniki" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 3 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="140">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="wifi" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Sieci i Wi‑Fi</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>Routery Wi‑Fi 6/6E</li><li>Systemy Mesh</li><li>Access Pointy</li><li>Okablowanie LAN</li><li>VPN (WireGuard)</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-400.webp 400w, assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-800.webp 800w, assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-1200.webp 1200w, assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-800.webp" alt="Sieci i Wi‑Fi – okablowanie i sprzęt sieciowy" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/caspar-camille-rubin-7SDoly3FV_0-unsplash-800.webp" alt="Sieci i Wi‑Fi – okablowanie i sprzęt sieciowy" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 4 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="210">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="bug" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Usuwanie malware</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>Windows / macOS / Linux</li><li>Ransomware</li><li>Phishing cleanup</li><li>Antywirus / EDR</li><li>Hardening przeglądarek</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/growtika-P1gELxxufW0-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/growtika-P1gELxxufW0-unsplash-400.webp 400w, assets/img/optimized/growtika-P1gELxxufW0-unsplash-800.webp 800w, assets/img/optimized/growtika-P1gELxxufW0-unsplash-1200.webp 1200w, assets/img/optimized/growtika-P1gELxxufW0-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/growtika-P1gELxxufW0-unsplash-800.webp" alt="Usuwanie malware – analiza zagrożeń i kodu" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/growtika-P1gELxxufW0-unsplash-800.webp" alt="Usuwanie malware – analiza zagrożeń i kodu" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 5 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="280">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="battery-charging" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Modernizacje</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>SSD / NVMe</li><li>RAM</li><li>GPU</li><li>Zasilacz (PSU)</li><li>Chłodzenie / airflow</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-400.webp 400w, assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-800.webp 800w, assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-1200.webp 1200w, assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-800.webp" alt="Modernizacje – komponenty PC i chłodzenie" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/gamercomp-ru-IDE_tD3rxV0-unsplash-800.webp" alt="Modernizacje – komponenty PC i chłodzenie" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 6 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="350">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="smartphone" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Mobile</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>iPhone</li><li>Android</li><li>Wymiana baterii</li><li>Ekrany / szybki</li><li>Porty ładowania</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-400.webp 400w, assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-800.webp 800w, assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-1200.webp 1200w, assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-800.webp" alt="Serwis mobile – naprawy smartfonów i wymiana baterii" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/onur-binay-4Ykxp_t4i08-unsplash-800.webp" alt="Serwis mobile – naprawy smartfonów i wymiana baterii" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 7 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="420">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="shield" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Cyberbezpieczeństwo</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>Audyt konfiguracji</li><li>Firewall / UTM</li><li>Polityka kopii</li><li>IAM / 2FA</li><li>Szkolenia użytkowników</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-400.webp 400w, assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-800.webp 800w, assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-1200.webp 1200w, assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-800.webp" alt="Cyberbezpieczeństwo – ochrona systemów i audyt" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/florian-olivo-gRQXs2KjrAo-unsplash-800.webp" alt="Cyberbezpieczeństwo – ochrona systemów i audyt" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+        <!-- 8 -->
+        <article class="svc-card slide-left" data-aos="fade-up" data-aos-delay="490">
+          <header class="svc-head">
+            <div class="ico"><i data-lucide="cloud" class="w-5 h-5 text-accent"></i></div>
+            <h2 class="svc-title">Chmura i backup</h2>
+          </header>
+          
+          <ul class="svc-list">
+            <li>OneDrive / Google Drive</li><li>Synology / TrueNAS</li><li>Wersjonowanie plików</li><li>Kopie offsite</li><li>Szyfrowanie danych</li>
+          </ul>
+          <figure class="svc-media" style="background:#041810 url('assets/img/optimized/walling-qRyQWEAWaNY-unsplash-800.webp') center/cover no-repeat;">
+            <picture>
+              <source type="image/webp" srcset="assets/img/optimized/walling-qRyQWEAWaNY-unsplash-400.webp 400w, assets/img/optimized/walling-qRyQWEAWaNY-unsplash-800.webp 800w, assets/img/optimized/walling-qRyQWEAWaNY-unsplash-1200.webp 1200w, assets/img/optimized/walling-qRyQWEAWaNY-unsplash-1600.webp 1600w" sizes="(min-width:1024px) 360px, (min-width:768px) 45vw, 100vw">
+              <img src="assets/img/optimized/walling-qRyQWEAWaNY-unsplash-800.webp" alt="Chmura i backup – rozwiązania kopii zapasowych" loading="lazy" decoding="async" width="1200" height="800">
+            </picture>
+            <noscript><img src="assets/img/optimized/walling-qRyQWEAWaNY-unsplash-800.webp" alt="Chmura i backup – rozwiązania kopii zapasowych" width="1200" height="800"></noscript>
+          </figure>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FABs and panels (settings/chatbot) -->
+  <div id="fabWrap" class="fixed bottom-5 right-5 flex flex-col items-end gap-3 z-50" aria-label="Skróty: ustawienia i czat">
+    <button id="settingsBtn" class="rounded-full p-3 bg-accent-gradient shadow-glow text-black hover:translate-y-[-2px] transition will-change-transform" aria-label="Ustawienia">
+      <i data-lucide="settings" class="w-5 h-5"></i>
+    </button>
+    <button id="chatbotBtn" class="rounded-full p-3 glass text-accent hover:translate-y-[-2px] transition will-change-transform" aria-label="Czas bota">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+    </button>
+  </div>
+
+  <div id="settingsMenu" class="hidden fixed bottom-20 right-5 glass p-4 rounded-2xl w-[min(90vw,280px)] shadow-glow" role="dialog" aria-modal="false" aria-label="Panel ustawień">
+    <div class="flex items-center justify-between mb-2">
+      <div class="font-display font-bold">Ustawienia</div>
+      <button id="settingsClose" aria-label="Zamknij ustawienia" class="p-1 rounded hover:text-accent">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+    <div class="space-y-2 text-sm">
+      <label class="flex items-center gap-3 py-1"><input type="checkbox" id="toggleHacker"><span>Tryb hakerski</span></label>
+      <label class="flex items-center gap-3 py-1"><input type="checkbox" id="toggleAnims" checked><span>Animacje</span></label>
+  <label class="hidden md:flex items-center gap-3 py-1"><input type="checkbox" id="toggleMatrix" checked><span>Tło Matrix</span></label>
+      <label class="block pt-1">
+        <span class="text-xs uppercase tracking-wide text-slate-400">Akcent</span>
+        <select id="accentPreset" class="mt-1 w-full bg-transparent border border-accent/40 rounded-xl px-3 py-2 text-sm">
+          <option value="neon">Neon (domyślny)</option>
+          <option value="emerald">Szmaragd</option>
+          <option value="aqua">Aqua</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div id="chatbotPanel" class="hidden fixed bottom-20 right-5 w-[min(90vw,360px)] glass rounded-2xl p-4 shadow-glow" role="dialog" aria-modal="false" aria-label="Czas bota">
+    <div class="flex items-center justify-between">
+      <div class="font-display font-bold">Czas bota</div>
+      <button id="chatbotClose" aria-label="Zamknij czat" class="p-1 rounded hover:text-accent">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+    <div id="chatLog" class="mt-2 h-48 overflow-y-auto text-sm space-y-2 pr-1" aria-live="polite"></div>
+    <form id="chatForm" class="mt-3 flex gap-2">
+      <input id="chatInput" class="flex-1 bg-transparent border border-accent/40 rounded-xl px-3 py-2 text-sm" placeholder="Zapytaj: godziny, dojazd, cennik..." aria-label="Wpisz pytanie do bota">
+      <button class="btn-ghost text-sm" type="submit">Wyślij</button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-24 gradient-separator-t border-t border-accent/10 py-10 text-sm" role="contentinfo">
+    <div class="mx-auto w-[95%] md:max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 items-start md:items-center justify-between">
+      <div>
+        <div class="font-display font-bold text-lg">Tech-<span class="text-accent">Majster</span></div>
+        <div class="text-slate-400">© 2025. System online. Połączenie szyfrowane. Najlepszy serwis w Zgorzelcu!</div>
+        <p class="text-xs text-slate-500 mt-2">Oferujemy porady, naprawy i cyberbezpieczeństwo na najwyższym poziomie.</p>
+      </div>
+      <div class="flex gap-4 text-slate-400">
+        <a href="https://x.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="X"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+        <a href="https://facebook.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+        <a href="https://instagram.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+
+    <section class="mx-auto w-[95%] md:max-w-6xl mt-8">
+      <h3 class="font-display font-bold mb-3">Aktualności i Szybkie Porady</h3>
+      <div id="news" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+
+    <section class="mx-auto w-[95%] md:max-w-6xl mt-8" data-aos="fade-up">
+      <h3 class="font-display font-bold mb-3">Zapisz się na newsletter</h3>
+      <div class="glass rounded-2xl p-5">
+        <form action="https://youraccount.us21.list-manage.com/subscribe/post?u=your-account-id&id=your-list-id&f_id=00e5e1e5f0" method="post" target="_blank" class="grid gap-4 md:grid-cols-[1fr_auto] items-end">
+          <label class="block">
+            <span class="text-xs uppercase tracking-wide text-slate-400">Adres email</span>
+            <input type="email" name="EMAIL" required class="mt-1 w-full bg-transparent border border-accent/40 focus:border-accent rounded-xl px-4 py-3 text-sm" placeholder="twoj@email.pl">
+          </label>
+          <button type="submit" class="btn-submit-primary font-display font-bold" aria-label="Zapisz się na newsletter">Zapisz mnie</button>
+          <div hidden><input type="hidden" name="tags" value="1234567"></div>
+          <div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b_your-account-id_your-list-id" tabindex="-1" value=""></div>
+        </form>
+        <p class="mt-2 text-xs text-slate-500">Subskrybując akceptujesz politykę prywatności. Możesz wypisać się w każdej chwili.</p>
+      </div>
+    </section>
+  </footer>
+
+  <noscript>
+    <div class="fixed bottom-0 inset-x-0 bg-red-600 text-white text-center py-2 text-sm font-display">
+      Ta strona wymaga JavaScript do pełnej funkcjonalności.
+    </div>
+  </noscript>
+
+  <!-- Force SPA route to match the prerendered page -->
+  <script>try{ if(!location.hash) location.hash = '#uslugi'; }catch(e){}</script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- App -->
+  <script src="assets/js/app.js?v=20250823" type="module"></script>
+  <!-- visitor counter assets removed from this page -->
+</body>
+</html>

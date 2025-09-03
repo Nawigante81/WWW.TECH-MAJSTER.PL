@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 5 — Tech-Majster PRO</title>
+  <meta name="description" content="Jak zabezpieczyć się przed ransomware — praktyczne kroki i postępowanie po ataku.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Jak się chronić przed ransomware — profilaktyka i reakcja</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+    <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/1click-5gIiuxKEBE0-unsplash-1200.webp" alt="Zabezpieczenia" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>Ransomware to poważne zagrożenie. Najlepsza obrona to profilaktyka: regularne kopie zapasowe, aktualizacje, segmentacja sieci oraz ograniczone uprawnienia użytkowników. Zachowaj kopie poza zasięgiem sieci lokalnej.</p>
+
+      <h2 id="plan">Krótki plan działania <a class="anchor" href="#plan">#</a></h2>
+      <ol class="article-section">
+        <li>Zabezpiecz kopie zapasowe offline oraz w chmurze (szyfrowane, immutable jeśli dostępne).</li>
+        <li>Wdrażaj zasadę najmniejszych uprawnień — usuń uprawnienia admina z kont codziennych użytkowników.</li>
+        <li>Stosuj EDR/AV z heurystyką i blokowaniem behawioralnym.</li>
+      </ol>
+
+      <h2 id="profilaktyka">Profilaktyka techniczna <a class="anchor" href="#profilaktyka">#</a></h2>
+      <ul class="article-section">
+        <li>Segmentacja VLAN / oddzielna sieć dla urządzeń o niskim zaufaniu.</li>
+        <li>Blokada makr w pakiecie biurowym domyślnie.</li>
+        <li>Aktualizacje systemów + monitor brakujących łatek (WSUS / automaty).</li>
+        <li>Filtrowanie poczty (DMARC, SPF, DKIM + sandbox załączników).</li>
+        <li>Kontrola rozszerzeń plików wykonywalnych w katalogach użytkownika.</li>
+      </ul>
+
+      <h2 id="reakcja">Po incydencie <a class="anchor" href="#reakcja">#</a></h2>
+      <p class="article-section">Odłącz urządzenia (sieć + zasilanie jeśli szyfrowanie aktywne), skontaktuj się z zespołem bezpieczeństwa lub CERT. Nie płać okupu bez konsultacji z prawnikiem i specjalistami — często istnieją alternatywy przywrócenia z kopii. Zgłoś incydent jeśli dotyczy danych osobowych (RODO, krajowe wymogi). Utwórz obraz zaszyfrowanego systemu do późniejszej analizy pamięci i artefaktów.</p>
+
+      <h2 id="odbudowa">Odbudowa środowiska <a class="anchor" href="#odbudowa">#</a></h2>
+      <p class="article-section">Przywracaj z czystych obrazów systemów, resetuj poświadczenia (hasła, klucze API), monitoruj logi pod wtórne próby. Waliduj integralność przywróconych danych hashami lub sumami kontrolnymi jeśli były wcześniej zarchiwizowane.</p>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Tailwind input file for local builds
+   Build commands:
+   - npm run dev:css   (watch)
+   - npm run build:css (minify)
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: project tokens can be mapped to Tailwind via theme.extend in tailwind.config.js
+   Example utilities that rely on CSS variables from styles.css can live separately there.
+*/

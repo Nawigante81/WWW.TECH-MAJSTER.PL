@@ -1,0 +1,62 @@
+[
+	{
+		"title": "Bezpieczna sieć Wi-Fi w 10 krokach",
+		"excerpt": "WPA3, mocne hasła, segmentacja IoT, aktualizacje, gościnna sieć, DNS filtrujący, monitoring, firewall, VPN, testy penetracyjne. Dodatkowa porada: Zmieniaj hasło co 3 miesiące.",
+		"url": "#",
+		"content": "Krok 1: Włącz WPA3 w routerze – to najnowszy standard szyfrowania, odporny na ataki brute-force. Przykład: W panelu admin routera (zwykle 192.168.0.1) znajdź sekcję Wi-Fi Security i wybierz WPA3-Personal. Krok 2: Ustaw mocne hasło – minimum 12 znaków, mieszanka liter, cyfr i symboli. Przykład: 'P@ssw0rd2025!TechMajster'. Krok 3: Segmentuj IoT – utwórz oddzielną sieć dla urządzeń smart home, aby nie narażać głównej sieci. Przykład: W routerach jak TP-Link użyj Guest Network z izolacją. Krok 4: Aktualizuj firmware routera regularnie – sprawdź stronę producenta co miesiąc. Krok 5: Włącz sieć gościną dla gości – z limitem czasu dostępu. Krok 6: Użyj DNS filtrującego, np. Cloudflare 1.1.1.1 for Families, aby blokować malware. Krok 7: Monitoruj połączenia – appki jak Fing pomogą wykryć nieznane urządzenia. Krok 8: Skonfiguruj firewall – blokuj niepotrzebne porty. Krok 9: Użyj VPN dla publicznych sieci – przykład: ExpressVPN. Krok 10: Przeprowadź testy penetracyjne – narzędzia jak Wireshark do analizy. Pamiętaj, bezpieczeństwo to proces!"
+	},
+	{
+		"title": "SSD vs HDD – Pełny przewodnik",
+		"excerpt": "System na SSD, archiwum na HDD. Trim, S.M.A.R.T., TBW. Porada: Używaj defragmentacji tylko na HDD. Zdjęcie przykładu: [link].",
+		"url": "#",
+		"content": "SSD (Solid State Drive) to szybki dysk bez ruchomych części, idealny do systemu operacyjnego i programów – czasy ładowania spadają o 80%. Przykład: Instalacja Windows na SSD trwa 5 min, na HDD 20 min. HDD (Hard Disk Drive) jest tańszy i ma większą pojemność, perfekt do archiwów danych. Porównanie: SSD – prędkość odczytu do 7000 MB/s, HDD – 200 MB/s. Technologie: TRIM optymalizuje SSD, usuwając niepotrzebne dane; S.M.A.R.T. monitoruje zdrowie dysku. TBW (Terabytes Written) to żywotność SSD – np. 600 TBW oznacza, że możesz zapisać 600 TB przed awarią. Porada: Na SSD nie defragmentuj – to skraca życie. Przykład konfiguracji: SSD 500GB na OS + programy, HDD 2TB na pliki. Koszt: SSD 1TB ~200 zł, HDD 1TB ~100 zł. Wybierz hybrydę dla optimum!"
+	},
+	{
+		"title": "Malware 2025: Zaawansowana ochrona",
+		"excerpt": "Backup offline, 3-2-1, ograniczone uprawnienia, EDR, AI detekcja. Antywirus to podstawa, ale nie wszystko. Porada: Skanuj co tydzień.",
+		"url": "#",
+		"content": "W 2025 malware ewoluuje – ransomware jak WannaCry 2.0 szyfruje dane w sekundach. Ochrona: Krok 1: Backup offline wg reguły 3-2-1 – 3 kopie danych, na 2 różnych mediach, 1 poza siecią. Przykład: Kopia na external HDD odłączony od PC. Krok 2: Ogranicz uprawnienia – używaj konta użytkownika bez admina na co dzień. Krok 3: Wdróż EDR (Endpoint Detection and Response) – narzędzia jak CrowdStrike monitorują w real-time. Krok 4: AI detekcja – antywirusy z ML jak Bitdefender wykrywają nowe zagrożenia. Porada: Skanuj system co tydzień i aktualizuj soft. Przykład ataku: Phishing email udający bank – nie klikaj linków! Dodatkowa ochrona: Użyj sandbox do testowania plików. Koszt: Dobry antywirus ~100 zł/rok. Bezpieczeństwo to nawyk!"
+	},
+	{
+		"title": "Mesh Wi-Fi w dużym domu",
+		"excerpt": "Backhaul kablowy, węzły, kanały. Porada: Testuj z appkami jak WiFi Analyzer. Dodatkowe tipy dla apartamentów.",
+		"url": "#",
+		"content": "Mesh Wi-Fi to system węzłów, które tworzą jedną sieć bez martwych stref. Przykład: W domu 200m² użyj 3 węzłów TP-Link Deco. Krok 1: Wybierz backhaul kablowy – podłącz węzły Ethernetem dla max prędkości. Krok 2: Rozmieść węzły – co 10-15m, unikaj metalowych przeszkód. Krok 3: Dostosuj kanały – użyj WiFi Analyzer app, aby uniknąć interferencji z sąsiadami. Porada dla apartamentów: Użyj mesh z MU-MIMO dla wielu urządzeń. Test: Przed: 50Mbps w pokoju, po: 500Mbps wszędzie. Koszt: Zestaw mesh ~500 zł. Dodatkowe tipy: Włącz QoS dla priorytetu video calli. Idealne dla smart home – integracja z Alexa."
+	},
+	{
+		"title": "Dbaj o baterię laptopa – Expert tips",
+		"excerpt": "70–80% charge, unikaj ciepła, kalibracja. Porada: Używaj trybu oszczędzania. Zdjęcie: Bateria po wymianie.",
+		"url": "#",
+		"content": "Baterie litowo-jonowe w laptopach tracą pojemność po 300-500 cyklach. Porada: Utrzymuj charge na 70-80% – unikaj 100% na stałe. Przykład: W BIOS lub appce jak Lenovo Vantage ustaw limit. Krok 1: Unikaj ciepła – nie używaj na kołdrze, czyść wentylatory co 6 mies. Krok 2: Kalibruj co 3 miesiące – rozładuj do 0%, naładuj do 100% bez przerwy. Krok 3: Używaj trybu oszczędzania energii – zmniejsz jasność ekranu. Przykład: Bateria HP po roku: bez dbania 60% pojemności, z tipami 90%. Wymiana: Koszt ~200 zł. Dodatkowo: Wyłączaj Wi-Fi gdy zbędne. Przedłuż życie baterii do 5 lat!"
+	},
+	{
+		"title": "Odzysk po formacie – DIY vs Pro",
+		"excerpt": "Nie zapisuj danych! Użyj PhotoRec. Ale lepiej serwis. Porada: Zawsze sprawdzaj przed formatem.",
+		"url": "#",
+		"content": "Formatowanie nie usuwa danych – tylko tabelę alokacji. DIY: 1) Nie zapisuj nic na dysk. 2) Użyj PhotoRec – skanuje sektory. Przykład: Odzysk zdjęć z pendrive'a. Dla krytycznych danych: Serwis (R-Studio, clean room). Koszt: Logiczne ~300 zł, fizyczne ~1000 zł. Porada: Backup przed formatem (Acronis). Przykład sukcesu: Odzysk 1TB po quick format – 95% plików. Nie instaluj softu na tym samym dysku!"
+	},
+	{
+		"title": "Cybersec dla firm – Podstawy",
+		"excerpt": "Audyt, szkolenie pracowników, 2FA. Porada: Implementuj zero-trust model.",
+		"url": "#",
+		"content": "Firmy są celem – ataki +50% r/r. Krok 1: Audyt (Nessus) – wykryj luki. Krok 2: Szkolenia anty-phishing – symulacje maili. Krok 3: 2FA (Google Authenticator). Porada: Zero-trust – weryfikuj każdy dostęp. Przykład: Firma 50 os. – spadek incydentów 70%. Dodatkowo: Firewall (pfSense), kopie zapasowe szyfrowane. Koszt audytu ~1000 zł. Zgodność z RODO = zaufanie klientów."
+	},
+	{
+		"title": "Modernizacja PC dla gamingu",
+		"excerpt": "GPU upgrade, cooling. Porada: Sprawdź PSU moc. Zdjęcie przed/po.",
+		"url": "#",
+		"content": "Start od GPU: upgrade z GTX 1060 do RTX 3060 = +100% FPS. Krok 2: Lepsze chłodzenie – AIO / tower cooler dla ciszy. Krok 3: RAM 32GB dla multitaskingu. Porada: Sprawdź zasilacz (≥650W). Przykład: Cyberpunk przed 60FPS, po 120FPS. Koszty: GPU 1500 zł, cooler 300 zł. Benchmark 3DMark do weryfikacji. RGB to estetyka, nie wydajność."
+	},
+	{
+		"title": "Smartfon naprawa – Częste błędy",
+		"excerpt": "Wymiana ekranu DIY? Nie! Porada: Używaj case'ów. Zdjęcia przykładów.",
+		"url": "#",
+		"content": "Błędy: DIY wymiana ekranu – ryzyko taśm i płyty. Porada: Serwis z oryginalnymi częściami. Krok 1: Zabezpieczenia – case + szkło. Krok 2: Puchnąca bateria = natychmiast wymiana (bez przebijania). Krok 3: Czyszczenie portu ładowania – izopropanol i pędzelek. Koszt wymiany baterii ~150 zł. Unikaj tanich ekranów – słaba jasność i dotyk."
+	},
+	{
+		"title": "Chmura backup – Jak zacząć",
+		"excerpt": "Google, Dropbox. Porada: Automatyczne sync + encrypt. Szczegółowy guide.",
+		"url": "#",
+		"content": "Krok 1: Wybór usługi – Google Drive (15GB free) / Dropbox (2GB free). Krok 2: Włącz sync – klient desktop. Krok 3: Szyfruj wrażliwe dane (VeraCrypt). Porada: 2FA obowiązkowo. Przykład: Utrata laptopa – odzysk w 5 min. Koszt: Google One 100GB ~8 zł/mies. Dla firm – wersje Enterprise. Automatyzuj i testuj przywracanie!"
+	}
+]

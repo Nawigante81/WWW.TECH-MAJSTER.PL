@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 6 — Tech-Majster PRO</title>
+  <meta name="description" content="Dyski SSD, TRIM i ograniczenia w odzyskiwaniu danych — co warto wiedzieć.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Dyski SSD, TRIM i ograniczenia w odzyskiwaniu danych</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+    <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/aedrian-salazar-VbUWr1tf5rI-unsplash-1200.webp" alt="Dysk SSD" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>W przeciwieństwie do dysków talerzowych, SSD używają TRIM i wear‑levelingu, co utrudnia odzyskiwanie skasowanych plików. TRIM informuje kontroler SSD, które bloki są wolne i mogą zostać wyczyszczone — po wywołaniu TRIM oryginalne dane mogą być fizycznie niedostępne.</p>
+
+      <h2 id="utrata">Co robić przy utracie danych na SSD <a class="anchor" href="#utrata">#</a></h2>
+      <p class="article-section">Przy pierwszych oznakach problemu: natychmiast odłącz nośnik. Każde dalsze operacje zapisu mogą nadpisać obszary mapowane przez kontroler w sposób nieprzewidywalny. Jeśli TRIM już zadziałał, odzysk logiczny jest często niemożliwy.</p>
+
+      <h2 id="obrazowanie">Obrazowanie i narzędzia <a class="anchor" href="#obrazowanie">#</a></h2>
+      <ul class="article-section">
+        <li><b>ddrescue</b> — delikatne próby odczytu bloków problematycznych.</li>
+        <li><b>nvme-cli / smartctl</b> — odczyt parametrów SMART / logów błędów.</li>
+        <li><b>Vendor tools</b> — czasem udostępniają diagnostykę stanów kontrolera.</li>
+      </ul>
+
+      <h2 id="firmware">Firmware i kontroler <a class="anchor" href="#firmware">#</a></h2>
+      <p class="article-section">Niektóre modele SSD mają znane serie błędów firmware (np. zawieszanie przy określonych cyklach zasilania). Aktualizacja firmware <em>przed</em> problemem poprawia stabilność; po utracie danych aktualizacja może zmienić mapowanie bloków — unikaj tego do czasu konsultacji.</p>
+
+      <h2 id="profilaktyka">Profilaktyka <a class="anchor" href="#profilaktyka">#</a></h2>
+      <ul class="article-section">
+        <li>Regularny backup (3‑2‑1) — jedyny skuteczny sposób na przypadkowe skasowanie.</li>
+        <li>Monitorowanie SMART: media_wearout, unsafe_shutdowns.</li>
+        <li>Unikaj przepełnienia >90% pojemności (zmniejszona przestrzeń over‑provisioning).</li>
+      </ul>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Klienta - Tech-Majster</title>
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/src/customer-portal/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Tech-Majster</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-blue-300">Strona główna</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Moje usługi</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Historia zamówień</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="mt-8">
+            <h2 class="text-3xl font-bold mb-4">Witaj w Portalu Klienta</h2>
+            <p class="text-gray-700">Zarządzaj swoimi usługami IT w jednym miejscu. Oto najnowsze informacje dotyczące Twoich zamówień i usług.</p>
+        </section>
+        <section class="mt-8">
+            <h3 class="text-2xl font-bold mb-4">Moje usługi</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Przykładowa usługa -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold mb-2">Usługa IT 1</h4>
+                    <p class="text-gray-700">Opis usługi IT 1.</p>
+                    <p class="text-gray-500 mt-2">Status: W trakcie</p>
+                </div>
+                <!-- Dodaj więcej usług tutaj -->
+            </div>
+        </section>
+        <section class="mt-8">
+            <h3 class="text-2xl font-bold mb-4">Historia zamówień</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Przykładowe zamówienie -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold mb-2">Zamówienie 1</h4>
+                    <p class="text-gray-700">Opis zamówienia 1.</p>
+                    <p class="text-gray-500 mt-2">Data: 2025-08-01</p>
+                </div>
+                <!-- Dodaj więcej zamówień tutaj -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-500 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Tech-Majster. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <script src="/assets/js/app.js"></script>
+    <script src="/src/customer-portal/chatbot.js"></script>
+
+    <section class="mt-8">
+        <h3 class="text-2xl font-bold mb-4">Diagnostic Chatbot</h3>
+        <div id="chatHistory" class="chat-history"></div>
+        <form id="chatForm" class="flex mt-4">
+            <input type="text" id="userInput" class="flex-grow p-2 border border-gray-300 rounded-l-lg" placeholder="Wpisz swoje pytanie...">
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-600">Wyślij</button>
+        </form>
+    </section>
+</body>
+</html>

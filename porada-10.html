@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 10 — Tech-Majster PRO</title>
+  <meta name="description" content="Jak postawić prosty serwer/NAS w domu — wskazówki konfiguracyjne i bezpieczeństwo.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Jak postawić prosty serwer/NAS w domu — konfiguracja i bezpieczeństwo</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+    <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/1click-5gIiuxKEBE0-unsplash-1200.webp" alt="NAS" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>Wybierz centralny magazyn (NAS) lub użyj starszego komputera z odpowiednim systemem plików. Zadbaj o regularne kopie, zabezpieczenia SSH i dostęp ograniczony do zaufanych adresów IP.</p>
+      <h2>Ważne kroki</h2>
+      <ul>
+        <li>Konfiguracja RAID lub snapshotów (pamiętaj: RAID nie zastąpi kopii zapasowych).</li>
+        <li>Ustawienia użytkowników i uprawnień, szyfrowanie dysków jeśli wymagane.</li>
+        <li>Regularne aktualizacje oprogramowania serwera/NAS.</li>
+      </ul>
+      </section>
+      <section>
+        <p>Zastanów się nad wyborem między dedykowanym NAS (Synology, QNAP) a serwerem DIY (mini PC + TrueNAS/Unraid). Zdefiniuj wymogi: pojemność, redundancja (RAID/ZFS), transkodowanie multimediów, aplikacje (kontenery Docker).</p>
+
+        <h2 id="wybor-platformy">Wybór platformy <a class="anchor" href="#wybor-platformy">#</a></h2>
+        <ul class="article-section">
+          <li>Gotowy NAS: mniejsze zużycie energii, prostszy interfejs.</li>
+          <li>DIY: większa elastyczność (ECC RAM, karty 10GbE, ZFS natywnie).</li>
+          <li>CPU z Quick Sync / iGPU dla transkodowania (Plex/Jellyfin).</li>
+        </ul>
+
+        <h2 id="storage-layout">Układ storage <a class="anchor" href="#storage-layout">#</a></h2>
+        <ul class="article-section">
+          <li>ZFS: RAIDZ2 dla równowagi między pojemnością a tolerancją błędów.</li>
+          <li>SSD cache (L2ARC) i ZIL/SLOG dla obciążeń zapisowych (opcjonalnie).</li>
+          <li>Wydzielenie datasetów (multimedia, backupy, kontenery) z QoS.</li>
+        </ul>
+
+        <h2 id="zabezpieczenia">Zabezpieczenia <a class="anchor" href="#zabezpieczenia">#</a></h2>
+        <ul class="article-section">
+          <li>Wyłącz dostęp publiczny do panelu – używaj VPN (WireGuard).</li>
+          <li>Ogranicz SMB/NFS tylko do potrzebnych sieci/VLAN.</li>
+          <li>Szyfrowanie datasetów krytycznych (ZFS native encryption / LUKS).</li>
+        </ul>
+
+        <h2 id="kopie-monitoring">Kopie i monitoring <a class="anchor" href="#kopie-monitoring">#</a></h2>
+        <ul class="article-section">
+          <li>Strategia 3‑2‑1: kopia off‑site (Backblaze B2, Wasabi) lub dysk rotacyjny.</li>
+          <li>SMART + scrub ZFS (np. co 2 tygodnie) + test odtwarzania.</li>
+          <li>Monitorowanie: Prometheus + Grafana / gotowe pakiety NAS.</li>
+        </ul>
+      </section>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

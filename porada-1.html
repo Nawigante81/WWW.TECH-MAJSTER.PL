@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 1 — Tech-Majster PRO</title>
+  <meta name="description" content="Odzyskiwanie danych — pierwsze kroki i najlepsze praktyki. Co robić po utracie plików, jak zabezpieczyć nośnik i kiedy zwrócić się do specjalistów.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="container article-page">
+    <article>
+      <header>
+        <h1>Odzyskiwanie danych — pierwsze kroki i najlepsze praktyki</h1>
+        <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+      </header>
+
+      <a class="back-link" href="porady.html">← Powrót do Porady</a>
+      <figure class="article-hero hero-small">
+        <img src="assets/img/optimized/alessio-zaccaria-nT1UmzgFAXY-unsplash-1200.webp" alt="Technik przy komputerze podczas diagnozy dysku" loading="lazy" decoding="async">
+        <figcaption>Wczesne działania mogą znacząco zwiększyć szanse na odzysk danych.</figcaption>
+      </figure>
+
+      <section>
+        <p>Utrata danych potrafi być stresująca, ale pierwsze decyzje niemal zawsze decydują o skuteczności późniejszego odzysku. Ten artykuł tłumaczy praktyczne, bezpieczne kroki które możesz wykonać natychmiast po wykryciu problemu, kiedy warto przerwać samodzielne próby i jak przygotować nośnik przed oddaniem go do serwisu.</p>
+
+        <h2 id="co-zrobic">Co zrobić natychmiast (krótka lista) <a class="anchor" href="#co-zrobic">#</a></h2>
+        <ul class="article-section">
+          <li>Przestań zapisywać na nośniku — każdy nowy zapis zmniejsza szanse na odzyskanie plików.</li>
+          <li>Odłącz nośnik od systemu (bez bezpiecznego odmontowywania w przypadku podejrzenia uszkodzenia mechanicznego — po prostu wyłącz komputer i odłącz przewód).</li>
+          <li>Jeśli to laptop z ważnymi danymi — wyłącz go i nie uruchamiaj ponownie.</li>
+          <li>Nie instaluj ani nie uruchamiaj narzędzi odzysku na tym samym nośniku (instaluj na innym komputerze).</li>
+          <li>Jeżeli masz kopię zapasową — przywróć dane z niej zamiast próbować odzysku z uszkodzonego nośnika.</li>
+        </ul>
+
+        <h2 id="rodzaje">Krótko o tym, co może się wydarzyć <a class="anchor" href="#rodzaje">#</a></h2>
+        <p class="article-section">Utrata danych wynika zwykle z jednego z trzech scenariuszy: błąd logiczny (np. przypadkowe usunięcie, format), awaria elektroniczna (uszkodzone komponenty kontrolera) lub uszkodzenie mechaniczne (głowice, talerze w HDD). Dla każdego scenariusza sposób działania jest inny — dlatego ważne jest, by nie pogorszyć przez nieprzemyślane kroki szans na odzysk.</p>
+
+        <h2 id="narzedzia">Proste narzędzia i kiedy ich używać <a class="anchor" href="#narzedzia">#</a></h2>
+        <p class="article-section">Do przypadków logicznych często wystarczą narzędzia typu TestDisk/PhotoRec, a dla dysków obraz sektorowy utworzony programem ddrescue daje bezpieczne środowisko pracy (pracujemy na kopii, nie na oryginale). SSD mają mechanizmy takie jak TRIM, które po usunięciu plików mogą fizycznie usuwać dane — to ogranicza skuteczność domowych prób odzysku.</p>
+
+        <h2 id="kiedy-serwis">Kiedy natychmiast skontaktować się z serwisem <a class="anchor" href="#kiedy-serwis">#</a></h2>
+        <ul class="article-section">
+          <li>Jeśli dysk wydaje nietypowe dźwięki (stuknięcia, grind) — jest to objaw mechaniczny.</li>
+          <li>Jeśli nośnik nie jest rozpoznawany przez BIOS/OS lub pojawiają się błędy elektroniki.</li>
+          <li>Gdy dane są krytyczne biznesowo lub prawnie — lepiej oddać do wyspecjalizowanego laboratorium.</li>
+        </ul>
+
+        <h2 id="przygotowanie">Jak przygotować nośnik przed oddaniem do serwisu <a class="anchor" href="#przygotowanie">#</a></h2>
+        <ol class="article-section">
+          <li>Zanotuj objawy oraz dokładny ciąg zdarzeń — kiedy i jak problem wystąpił.</li>
+          <li>Nie próbuj otwierać obudowy HDD — tylko laboratoria z clean room mają odpowiednie warunki.</li>
+          <li>Zapewnij transport w stabilnej temperaturze i zabezpiecz przed wstrząsami.</li>
+          <li>Jeżeli to SSD, poinformuj serwis o modelu i czy TRIM był aktywny.</li>
+        </ol>
+
+        <h2 id="plan-serwisu">Przykładowy plan działania serwisu <a class="anchor" href="#plan-serwisu">#</a></h2>
+        <p class="article-section">Profesjonalny serwis zwykle wykonuje najpierw diagnostykę (SMART, logi), tworzy obraz bit‑po‑bicie nośnika, a następnie próbuje odzyskać strukturę plików na kopii. W przypadkach mechanicznych stosowane są naprawy elektroniczne lub wymiana głowic w warunkach kontrolowanych.</p>
+
+        <h2 id="wskazowki">Wskazówki końcowe <a class="anchor" href="#wskazowki">#</a></h2>
+        <p class="article-section">Najlepszą ochroną przed utratą danych jest prewencja: wdrożenie polityki backupu (reguła 3‑2‑1: 3 kopie, 2 różne nośniki, 1 kopia offsite), regularne testy przywracania oraz monitorowanie stanu dysków (SMART). Gdy dojdzie do problemu — zachowaj spokój, nie zapisuj nic na nośniku i rozważ konsultację ze specjalistami.</p>
+
+        <p class="small">Potrzebujesz pomocy na miejscu? Skontaktuj się z nami przez stronę Kontakt — oferujemy diagnostykę i wycenę odzysku danych.</p>
+      </section>
+    </article>
+  </main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>

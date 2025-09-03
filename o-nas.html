@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O nas — Tech-Majster PRO | Zgorzelec</title>
+  <meta name="description" content="Poznaj Tech‑Majster PRO: 15+ lat doświadczenia, zaawansowane laboratorium, certyfikacje i misja dostarczania najlepszych usług IT.">
+  <meta name="build" content="2025-08-23T12:00:00Z">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://getacid.uk/o-nas.html">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-512.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <!-- Tailwind CDN (TODO: local build) -->
+  <script defer src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/tailwind.css" media="print" onload="this.media='all'">
+
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script src="assets/js/web-vitals-fallback.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=20250823" />
+
+  <!-- OG + Twitter -->
+  <meta property="og:title" content="O nas — Tech-Majster PRO (Zgorzelec)">
+  <meta property="og:description" content="Zespół ekspertów IT, certyfikacje i misja wsparcia klientów w sprzęcie, oprogramowaniu, sieciach i cyberbezpieczeństwie.">
+  <meta property="og:image" content="/assets/img/og-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tech-Majster PRO">
+  <meta property="og:locale" content="pl_PL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@techmajster">
+  <meta name="twitter:title" content="O nas — Tech-Majster PRO (Zgorzelec)">
+  <meta name="twitter:description" content="Zespół ekspertów IT, certyfikacje i misja wsparcia klientów w sprzęcie, oprogramowaniu, sieciach i cyberbezpieczeństwie.">
+  <meta name="twitter:image" content="/assets/img/og-cover.jpg">
+
+  <!-- JSON-LD: AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AboutPage",
+    "name":"O nas — Tech-Majster PRO",
+    "url":"https://getacid.uk/o-nas.html",
+    "about":{"@type":"LocalBusiness","@id":"https://getacid.uk/#business"}
+  }
+  </script>
+
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+</head>
+<body class="bg-ink text-slate-200 antialiased selection:bg-accent/50">
+  <!-- BG -->
+  <canvas id="matrix-bg" class="fixed inset-0 -z-5"></canvas>
+  <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,rgba(0,255,136,.15),transparent_30%),radial-gradient(circle_at_90%_20%,rgba(0,255,136,.10),transparent_25%),radial-gradient(circle_at_50%_90%,rgba(0,255,136,.12),transparent_30%)] animate-pulse"></div>
+
+  <!-- Skip -->
+  <a href="#app" id="skipLink" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-black px-4 py-2 rounded z-[9999]">Pomiń do treści</a>
+
+  <!-- Header/Nav -->
+  <header class="sticky top-3 z-50 mx-auto w-[95%] md:max-w-6xl">
+    <div id="navbar" class="backdrop-blur bg-black/50 border-accent-gradient rounded-2xl px-4 sm:px-6 shadow-glow transition-all duration-300">
+      <div class="h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3" aria-label="Tech-Majster – strona główna">
+          <img src="/assets/img/logo.svg" alt="Logo Tech-Majster" width="44" height="44" class="w-11 h-11" loading="eager" decoding="async" fetchpriority="high">
+          <span class="font-display font-extrabold text-xl md:text-2xl leading-none tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,0,0,0.6)]">
+            Tech-<span class="text-accent">Majster</span>
+          </span>
+        </a>
+  <!-- compact counter next to logo (removed) -->
+  <nav class="hidden md:flex gap-6 text-sm font-display">
+          <a data-route="uslugi" href="#uslugi" class="nav-link hover:text-accent hover:scale-105 transition-transform">Usługi</a>
+          <a data-route="realizacje" href="#realizacje" class="nav-link hover:text-accent hover:scale-105 transition-transform">Realizacje</a>
+          <a data-route="porady" href="#porady" class="nav-link hover:text-accent hover:scale-105 transition-transform">Porady</a>
+          <a data-route="cennik" href="#cennik" class="nav-link hover:text-accent hover:scale-105 transition-transform">Cennik</a>
+          <a data-route="onas" href="#onas" class="nav-link hover:text-accent hover:scale-105 transition-transform" aria-current="page">O nas</a>
+          <a data-route="faq" href="#faq" class="nav-link hover:text-accent hover:scale-105 transition-transform">FAQ</a>
+          <a data-route="kontakt" href="#kontakt" class="nav-link hover:text-accent hover:scale-105 transition-transform">Kontakt</a>
+          <span class="hidden md:flex items-center gap-2 ml-2">
+            <!-- visitor counter removed (kept in kontakt.html) -->
+          </span>
+        </nav>
+  <div class="flex items-center gap-3">
+          <button id="themeToggle" class="p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors" aria-label="Przełącz motyw">
+            <i data-lucide="moon" class="w-5 h-5"></i>
+          </button>
+          <a href="#kontakt" data-route="kontakt" class="btn-accent hidden sm:inline-flex">
+            <i data-lucide="send" class="w-4 h-4"></i><span>Kontakt</span>
+          </a>
+          <button id="openMenu" class="md:hidden p-2 rounded-lg border border-accent/30 hover:border-accent/60 transition-colors">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden py-3 border-t border-accent/20 transition-all duration-300">
+        <nav class="grid gap-2 text-sm font-display">
+          <a data-route="uslugi" href="#uslugi" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Usługi</a>
+          <a data-route="realizacje" href="#realizacje" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Realizacje</a>
+          <a data-route="porady" href="#porady" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Porady</a>
+          <a data-route="cennik" href="#cennik" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Cennik</a>
+          <a data-route="onas" href="#onas" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform" aria-current="page">O nas</a>
+          <a data-route="faq" href="#faq" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">FAQ</a>
+          <a data-route="kontakt" href="#kontakt" class="nav-link py-2 px-1 hover:text-accent hover:translate-x-2 transition-transform">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN: prerender snapshot O nas -->
+  <main id="app" class="mx-auto w-[95%] md:max-w-6xl pt-24">
+    <section class="space-y-8" aria-labelledby="aboutTitle">
+      <h1 id="aboutTitle" class="text-4xl md:text-5xl font-display font-bold fade-in" data-aos="fade-up">O nas</h1>
+      <p class="text-lg text-slate-300 fade-in" data-aos="fade-up" data-aos-delay="40">Zespół ekspertów z 15+ lat doświadczenia. Specjalizujemy się w hardware, software, sieciach i cybersec.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6 slide-right neumorph" data-aos="fade-up" data-aos-delay="0">
+          <div class="flex items-center gap-4 mb-3">
+            <i data-lucide="trophy" class="w-6 h-6 text-accent" aria-hidden="true"></i>
+            <h2 class="font-display font-bold text-lg">Doświadczenie 15+ lat w IT</h2>
+          </div>
+          <p class="text-base text-slate-300 mb-4">Stawiamy na jakość i przewidywalność. Aktualizacje bezpieczeństwa to priorytet.</p>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/optimized/onas3-400.webp 400w, /assets/img/optimized/onas3-800.webp 800w, /assets/img/optimized/onas3-1200.webp 1200w, /assets/img/optimized/onas3-1600.webp 1600w" sizes="(min-width:1024px) 300px, (min-width:768px) 45vw, 100vw">
+            <img class="rounded-xl" src="/assets/img/optimized/onas3-400.webp" alt="Zespół: Doświadczenie 15+ lat w IT" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+          <noscript><img class="rounded-xl" src="/assets/img/optimized/onas3-800.webp" alt="Zespół: Doświadczenie 15+ lat w IT" width="800" height="533"></noscript>
+        </div>
+
+        <div class="glass rounded-2xl p-6 slide-right neumorph" data-aos="fade-up" data-aos-delay="80">
+          <div class="flex items-center gap-4 mb-3">
+            <i data-lucide="microscope" class="w-6 h-6 text-accent" aria-hidden="true"></i>
+            <h2 class="font-display font-bold text-lg">Zaawansowane lab z AI diag</h2>
+          </div>
+          <p class="text-base text-slate-300 mb-4">Diagnostyka wsparta analizą logów i predykcją błędów.</p>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/optimized/onas2-400.webp 400w, /assets/img/optimized/onas2-800.webp 800w, /assets/img/optimized/onas2-1200.webp 1200w, /assets/img/optimized/onas2-1600.webp 1600w" sizes="(min-width:1024px) 300px, (min-width:768px) 45vw, 100vw">
+            <img class="rounded-xl" src="/assets/img/optimized/onas2-400.webp" alt="Zespół: Zaawansowane lab z AI diag" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+          <noscript><img class="rounded-xl" src="/assets/img/optimized/onas2-800.webp" alt="Zespół: Zaawansowane lab z AI diag" width="800" height="533"></noscript>
+        </div>
+
+        <div class="glass rounded-2xl p-6 slide-right neumorph" data-aos="fade-up" data-aos-delay="160">
+          <div class="flex items-center gap-4 mb-3">
+            <i data-lucide="badge-check" class="w-6 h-6 text-accent" aria-hidden="true"></i>
+            <h2 class="font-display font-bold text-lg">Certyfikaty CISSP, CompTIA+</h2>
+          </div>
+          <p class="text-base text-slate-300 mb-4">Standardy i dobre praktyki bezpieczeństwa w codziennej pracy.</p>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/optimized/onas1-400.webp 400w, /assets/img/optimized/onas1-800.webp 800w, /assets/img/optimized/onas1-1200.webp 1200w, /assets/img/optimized/onas1-1600.webp 1600w" sizes="(min-width:1024px) 300px, (min-width:768px) 45vw, 100vw">
+            <img class="rounded-xl" src="/assets/img/optimized/onas1-400.webp" alt="Zespół: Certyfikaty CISSP, CompTIA+" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+          <noscript><img class="rounded-xl" src="/assets/img/optimized/onas1-800.webp" alt="Zespół: Certyfikaty CISSP, CompTIA+" width="800" height="533"></noscript>
+        </div>
+      </div>
+
+      <div class="mt-8" data-aos="fade-up" data-aos-delay="260">
+        <h2 class="text-xl font-bold mb-4">Nasza misja</h2>
+        <p class="text-base text-slate-300">Dostarczać najlepsze rozwiązania IT z efektami wizualnymi i praktycznymi poradami.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FABs and panels -->
+  <div id="fabWrap" class="fixed bottom-5 right-5 flex flex-col items-end gap-3 z-50" aria-label="Skróty: ustawienia i czat">
+    <button id="settingsBtn" class="rounded-full p-3 bg-accent-gradient shadow-glow text-black hover:translate-y-[-2px] transition will-change-transform" aria-label="Ustawienia">
+      <i data-lucide="settings" class="w-5 h-5"></i>
+    </button>
+    <button id="chatbotBtn" class="rounded-full p-3 glass text-accent hover:translate-y-[-2px] transition will-change-transform" aria-label="Czas bota">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+    </button>
+  </div>
+
+  <div id="settingsMenu" class="hidden fixed bottom-20 right-5 glass p-4 rounded-2xl w-[min(90vw,280px)] shadow-glow" role="dialog" aria-modal="false" aria-label="Panel ustawień">
+    <div class="flex items-center justify-between mb-2">
+      <div class="font-display font-bold">Ustawienia</div>
+      <button id="settingsClose" aria-label="Zamknij ustawienia" class="p-1 rounded hover:text-accent">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+    <div class="space-y-2 text-sm">
+      <label class="flex items-center gap-3 py-1"><input type="checkbox" id="toggleHacker"><span>Tryb hakerski</span></label>
+      <label class="flex items-center gap-3 py-1"><input type="checkbox" id="toggleAnims" checked><span>Animacje</span></label>
+  <label class="hidden md:flex items-center gap-3 py-1"><input type="checkbox" id="toggleMatrix" checked><span>Tło Matrix</span></label>
+      <label class="block pt-1">
+        <span class="text-xs uppercase tracking-wide text-slate-400">Akcent</span>
+        <select id="accentPreset" class="mt-1 w-full bg-transparent border border-accent/40 rounded-xl px-3 py-2 text-sm">
+          <option value="neon">Neon (domyślny)</option>
+          <option value="emerald">Szmaragd</option>
+          <option value="aqua">Aqua</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div id="chatbotPanel" class="hidden fixed bottom-20 right-5 w-[min(90vw,360px)] glass rounded-2xl p-4 shadow-glow" role="dialog" aria-modal="false" aria-label="Czas bota">
+    <div class="flex items-center justify-between">
+      <div class="font-display font-bold">Czas bota</div>
+      <button id="chatbotClose" aria-label="Zamknij czat" class="p-1 rounded hover:text-accent">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+    <div id="chatLog" class="mt-2 h-48 overflow-y-auto text-sm space-y-2 pr-1" aria-live="polite"></div>
+    <form id="chatForm" class="mt-3 flex gap-2">
+      <input id="chatInput" class="flex-1 bg-transparent border border-accent/40 rounded-xl px-3 py-2 text-sm" placeholder="Zapytaj: godziny, dojazd, cennik..." aria-label="Wpisz pytanie do bota">
+      <button class="btn-ghost text-sm" type="submit">Wyślij</button>
+    </form>
+  </div>
+
+  <footer class="mt-24 gradient-separator-t border-t border-accent/10 py-10 text-sm" role="contentinfo">
+    <div class="mx-auto w-[95%] md:max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 items-start md:items-center justify-between">
+      <div>
+        <div class="font-display font-bold text-lg">Tech-<span class="text-accent">Majster</span></div>
+        <div class="text-slate-400">© 2025. System online. Połączenie szyfrowane. Najlepszy serwis w Zgorzelcu!</div>
+        <p class="text-xs text-slate-500 mt-2">Oferujemy porady, naprawy i cyberbezpieczeństwo na najwyższym poziomie.</p>
+      </div>
+      <div class="flex gap-4 text-slate-400">
+        <a href="https://x.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="X"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+        <a href="https://facebook.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+        <a href="https://instagram.com/techmajster" class="hover:text-accent hover:rotate-12 transition-transform" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="fixed bottom-0 inset-x-0 bg-red-600 text-white text-center py-2 text-sm font-display">
+      Ta strona wymaga JavaScript do pełnej funkcjonalności.
+    </div>
+  </noscript>
+
+  <!-- Force SPA route to match the prerendered page -->
+  <script>try{ if(!location.hash) location.hash = '#onas'; }catch(e){}</script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- App -->
+  <script src="assets/js/app.js?v=20250823" type="module"></script>
+  <!-- visitor counter assets removed from this page -->
+</body>
+</html>

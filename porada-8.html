@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porada 8 — Tech-Majster PRO</title>
+  <meta name="description" content="Bezpieczeństwo sieci domowej: ustawienia routera, Wi‑Fi i ochrona urządzeń IoT.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">Tech-Majster</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="porady.html">Porady</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container article-page">
+  <article>
+    <a class="back-link" href="porady.html">← Powrót do Porady</a>
+    <header>
+      <h1>Bezpieczeństwo sieci domowej — jak zabezpieczyć router, Wi‑Fi i urządzenia IoT</h1>
+      <p class="meta">Autor: Tech‑Majster · Data: 2025-09-02</p>
+    </header>
+    <figure class="article-hero hero-small">
+      <img src="assets/img/optimized/1click-5gIiuxKEBE0-unsplash-1200.webp" alt="Router i sieć domowa" loading="lazy" decoding="async">
+    </figure>
+    <section>
+      <p>Zabezpieczenie sieci domowej zaczyna się od zmiany domyślnych haseł do routera, włączenia WPA3/WPA2‑AES dla Wi‑Fi oraz regularnych aktualizacji firmware. Segmentuj sieć: wydziel sieć gościnną dla IoT i urządzeń o niskim zaufaniu.</p>
+
+      <h2 id="lista">Lista kontrolna <a class="anchor" href="#lista">#</a></h2>
+      <ul class="article-section">
+        <li>Zmień hasło administratora routera i wyłącz zdalne zarządzanie.</li>
+        <li>Używaj silnego szyfrowania Wi‑Fi (WPA2 lub WPA3).</li>
+        <li>Stwórz sieć gościnną dla urządzeń IoT i smart‑domu.</li>
+        <li>Aktualizuj firmware routera i urządzeń.</li>
+      </ul>
+
+      <h2 id="segmentacja">Segmentacja i VLAN <a class="anchor" href="#segmentacja">#</a></h2>
+      <p class="article-section">Jeśli router / AP to pozwala, wydziel VLAN lub SSID dla IoT. Ogranicz dostęp z tej sieci do zasobów LAN (reguły firewall). Zmniejszasz ryzyko lateral movement w przypadku przejęcia kamery / TV.</p>
+
+      <h2 id="monitoring">Monitoring i logi <a class="anchor" href="#monitoring">#</a></h2>
+      <ul class="article-section">
+        <li>Włącz logi DHCP i analizuj nieznane adresy MAC.</li>
+        <li>Alerty przy nowych urządzeniach (push/mail jeśli wspierane).</li>
+        <li>Okresowy skan nmap &#8211; wykrywanie otwartych usług.</li>
+      </ul>
+
+      <h2 id="iot">Utwardzanie IoT <a class="anchor" href="#iot">#</a></h2>
+      <ul class="article-section">
+        <li>Wyłącz UPnP oraz WPS.</li>
+        <li>Zmień domyślne hasła, użyj unikalnych dla paneli web.</li>
+        <li>Aktualizuj firmware kamer / sterowników automatyki.</li>
+      </ul>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>© Tech-Majster PRO — Zgorzelec</p>
+</footer>
+</body>
+</html>
